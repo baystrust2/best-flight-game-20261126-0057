@@ -1,0 +1,36 @@
+/* Sky Courier — page shell. The game fills the window; the canvas itself
+   is always 1280x720, the size of the screenshots. */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #06101c;
+  overflow: hidden;
+}
+#wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+#game {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: block;
+  background: #2f6fd0;
+  cursor: crosshair;
+}
+#hint {
+  margin: 0;
+  padding: 6px 10px;
+  font: 12px/1.4 system-ui, sans-serif;
+  color: #9fc4e8;
+  background: #08121f;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
